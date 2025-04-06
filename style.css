@@ -210,3 +210,16 @@ header h2{
 .swal2-title{
     color: rgb(255 21 21);
 }
+
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: rgb(221, 221, 221) 0px 0px 10px;
+    border-radius: 100px 100px 0px 0px;
+}
+footer span{
+    color: #03A9F4;
+    font-weight: bold;
+}
