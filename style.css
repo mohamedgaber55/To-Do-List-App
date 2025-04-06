@@ -212,7 +212,7 @@ header h2{
 }
 
 footer{
-    border-top: 1px solid #f6f6f6;
+    border-top: 1px solid #ddd;
     padding: 5px;
     position: absolute;
     bottom: 5px;
