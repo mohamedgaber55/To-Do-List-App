@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App | Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .landing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cpntainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin-top: 30px;
+        }
+
+        .vector img {
+            max-width: 100%;
+        }
+
+        .text {
+            max-width: 50%;
+        }
+
+        .text h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .text p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #777;
+        }
+
+        .welcome{
+            color: #007BFF;
+            font-weight: 700;
+            font-size: 38px;
+        }
+
+        .text button {
+            text-decoration: none;
+            background-color: #007BFF;
+            padding: 7px 10px;
+            width: 130px;
+            border-radius: 5px;
+            border: none;
+            transition: .3s;
+        }
+        .text button:hover{
+            text-decoration: none;
+            background-color: #007BFF;
+            transform: scale(1.05);
+        }
+        .text button a {
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .cpntainer {
+                flex-direction: column;
+                align-items: center;
+            }
+            .landing {
+                height: 100%;
+            }
+
+            .text {
+                max-width: 100%;
+                text-align: center;
+            }
+            .text h2 {
+                font-size: 23px;
+                margin-bottom: 20px;
+            }
+            .welcome{
+                font-size: 25px;
+            }
+            .bigger{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>To-Do List APP</h2>
+    </header>
+
+    <div class="landing">
+        <div class="cpntainer">
+            <div class="vector">
+                <img src="./imgs/vector.png" alt="To-Do List Vector">
+            </div>
+            <div class="text">
+                <h2><span class="welcome">Welcome</span> To Your Task Organizer.</h2>
+                <p>Take control of your day. Plan smarter, stay focused, and get things done.
+                <span class="bigger">With our To-Do List App, you can easily manage your tasks and boost your productivity.</span>
+                </p>
+                <button><a href="./index.html">Get Started</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

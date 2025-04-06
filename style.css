@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Titillium Web", sans-serif;
+    transition: 1s;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder{
+    color: #d0e9ff;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+header h2{
+    width: 350px;
+    text-align: center;
+    box-shadow: rgb(221, 221, 221) 0px 0px 10px;
+    color: #2196F3;
+    border-radius: 0px 0px 100px 100px;
+    margin: 0;
+    padding: 15px 0px;
+    font-size: 30px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.to-do-container{
+    width: 600px;
+    margin: 60px 0 50px;
+    background-color: #f6f6f6;
+    transition: 1s;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.to-do-container .add-task{
+    background-color: #1E88E5;
+    position: relative;
+    padding: 15px;
+}
+
+.to-do-container .add-task input{
+    display: inline-block;
+    padding: 20px;
+    width: calc(100% - 15px);
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255, 0.3);
+    caret-color: white;
+    color: white;
+    font-size: 20px;
+    border-radius: 0px 50px 50px 0px;
+    transition: 1s;
+}
+
+.to-do-container .add-task .plus{
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: white;
+    color: #1E88E5;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.to-do-container .add-task .plus:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.to-do-container .task-content{
+    padding: 15px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.to-do-container .task-content > span{
+    color: #858585;
+    font-size: 15px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.to-do-container .task-content .task{
+    background-color: white;
+    width: calc(100% - 25px);
+    display: block;
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.to-do-container .task-content .task .delete{
+    background: rgb(255 21 21);
+    color: white;
+    text-align: center;
+    float: right;
+    padding: 2px 10px;
+    margin: -2px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.to-do-container .stats{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 20px 0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.to-do-container .stats .tasks-count{
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.stats .tasks-completed{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+.stats .tasks-completed span,
+.stats .tasks-count span{
+    padding: 0 6px;
+    text-align: center;
+    background: #4dcb52;
+    border-radius: 12px;
+    color: white;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.stats .tasks-count span{
+    background: #03A9F4;
+}
+
+.finished{
+    text-decoration: line-through;
+    color: #858585;
+    opacity: .5;
+}
+
+.control{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.control button{
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    background: rgb(255 21 21);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.swal2-styled{
+    background-color: #1E88E5;
+}
+
+.swal2-title{
+    color: rgb(255 21 21);
+}
