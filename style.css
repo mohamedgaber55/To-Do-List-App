@@ -45,7 +45,7 @@ header h2{
 .to-do-container .add-task{
     background-color: #1E88E5;
     position: relative;
-    padding: 15px;
+    padding: 12px;
 }
 
 .to-do-container .add-task input{
