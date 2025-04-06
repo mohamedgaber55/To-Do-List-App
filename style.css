@@ -215,10 +215,11 @@ footer{
     border-top: 1px solid #ddd;
     padding: 5px;
     position: fixed;
-    bottom: 5px;
+    bottom: 0;
     text-align: center;
     width: 100%;
     background-color: #fff;
+    margin-to 15px;
 }
 footer span{
     color: #03A9F4;
